@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Diego Medeiros</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/imgs/icon_dg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu de Navegação Fixo -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="assets/imgs/icon_dg.png" alt="Logo - Diego Medeiros" class="logo">
+            </a>
+            
+            <!-- Menu Mobile -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <!-- Links de Navegação -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projetos" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a href="assets/downloads/Currículo Diego Medeiros.pdf" download class="nav-button">Download CV</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seção Home -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Diego Medeiros</h1>
+                <h2 class="hero-subtitle">Desenvolvedor Front-End & Web Designer</h2>
+                <p class="hero-description">
+                    Criando experiências digitais únicas e funcionais, com foco em design moderno e desenvolvimento responsivo.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-secondary">Entre em Contato</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-pic">
+                    <img src="assets/imgs/user1.png" alt="Diego Medeiros">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Indicador de Scroll -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Sou formado em Análise e Desenvolvimento de Sistemas, apaixonado por criar soluções digitais 
+                        que combinam estética e funcionalidade. Especializado em desenvolvimento front-end, 
+                        sempre busco aprender novas tecnologias e tendências do mercado.
+                    </p>
+                    <p class="about-description">
+                        Minha abordagem é focada na experiência do usuário, criando interfaces intuitivas 
+                        e responsivas que funcionam perfeitamente em qualquer dispositivo.
+                    </p>
+                </div>
+                <div class="skills-container">
+                    <h3>Habilidades Principais</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/imgs/web-design.png" alt="Design">
+                            </div>
+                            <h4>UI/UX Design</h4>
+                            <p>Design de interfaces modernas e intuitivas</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/imgs/frontend.png" alt="Frontend">
+                            </div>
+                            <h4>Frontend Development</h4>
+                            <p>HTML, CSS, JavaScript e frameworks modernos</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/imgs/backend.png" alt="Backend">
+                            </div>
+                            <h4>Backend Development</h4>
+                            <p>PHP, Node.js, MySQL e APIs REST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/web-design.png" alt="Projeto 1">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="Ver projeto" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-github" title="Ver código no GitHub" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Moderno</h3>
+                        <p>Plataforma de e-commerce responsiva com carrinho de compras, sistema de pagamento e painel administrativo.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/frontend.png" alt="Projeto 2">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="Ver projeto" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-github" title="Ver código no GitHub" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Dashboard interativo para análise de dados com gráficos dinâmicos e relatórios em tempo real.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/imgs/backend.png" alt="Projeto 3">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="Ver projeto" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-github" title="Ver código no GitHub" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>App de Tarefas</h3>
+                        <p>Aplicação web para gerenciamento de tarefas com autenticação, categorização e notificações.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Vamos conversar!</h3>
+                    <p>Estou sempre aberto a novas oportunidades e projetos interessantes. Entre em contato comigo!</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:dgmedeirosaafilho@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>dgmedeirosaafilho@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/diego-medeiros-alves-de-ara%C3%BAjo-filho-71ba2a306/" class="contact-method" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/diegofilho19" class="contact-method" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.instagram.com/dgmedeirosf_/" class="contact-method" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Diego Medeiros. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
