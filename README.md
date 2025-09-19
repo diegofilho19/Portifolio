@@ -1,6 +1,6 @@
 # Portfólio Diego Medeiros
 
-Um portfólio pessoal moderno, minimalista e totalmente responsivo desenvolvido com HTML5, CSS3 e JavaScript vanilla.
+Um portfólio pessoal moderno, minimalista e totalmente responsivo desenvolvido com **Bootstrap 5.3.2**, HTML5, CSS3 e JavaScript vanilla com animações AOS.
 
 ## 🎨 Design
 
@@ -12,20 +12,24 @@ Um portfólio pessoal moderno, minimalista e totalmente responsivo desenvolvido 
 - **#FCFFFC** - Branco gelo (fundo principal)
 
 ### Características
-- Design moderno e minimalista
+- **Framework Bootstrap 5.3.2** para layout responsivo
+- Design moderno e minimalista com gradientes suaves
 - Layout responsivo (mobile-first)
 - Tipografia elegante com fonte Inter
-- Animações suaves e transições
+- **Animações AOS** (Animate On Scroll)
 - Navegação smooth scroll
-- Menu mobile hambúrguer
+- Menu mobile hambúrguer com Bootstrap
+- Efeitos hover e transições suaves
+- Sistema de notificações moderno
 
 ## 🚀 Funcionalidades
 
 ### Navegação
-- Menu fixo com efeito glassmorphism
+- Menu fixo com efeito glassmorphism usando Bootstrap
 - Navegação smooth scroll entre seções
-- Menu mobile responsivo
+- Menu mobile responsivo com animações
 - Indicador de seção ativa
+- Botão "Voltar ao Topo" automático
 
 ### Seções
 1. **Home** - Apresentação principal com foto e call-to-actions
@@ -34,11 +38,13 @@ Um portfólio pessoal moderno, minimalista e totalmente responsivo desenvolvido 
 4. **Contato** - Formulário funcional e links para redes sociais
 
 ### Interatividade
-- Formulário de contato com validação
-- Sistema de notificações
-- Animações de scroll
-- Efeitos hover nos cards
+- Formulário de contato com validação e loading states
+- Sistema de notificações moderno
+- **Animações AOS** (fade-in, slide-up, etc.)
+- Efeitos hover nos cards com transformações
 - Lazy loading de imagens
+- Efeitos de parallax no hero
+- Partículas animadas no background (opcional)
 
 ## 📱 Responsividade
 
@@ -50,8 +56,10 @@ O portfólio é totalmente responsivo com breakpoints para:
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5** - Estrutura semântica
-- **CSS3** - Estilização com variáveis CSS e Grid/Flexbox
+- **Bootstrap 5.3.2** - Framework CSS para layout responsivo
+- **CSS3** - Estilização customizada com variáveis CSS e gradientes
 - **JavaScript ES6+** - Interatividade e funcionalidades
+- **AOS (Animate On Scroll)** - Biblioteca de animações
 - **Font Awesome** - Ícones
 - **Google Fonts** - Tipografia (Inter)
 
