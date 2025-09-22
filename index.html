@@ -415,6 +415,9 @@
             height: 40px;
             border-radius: 50%;
             transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .project-buttons .btn:hover {
@@ -707,6 +710,16 @@
         <section class="hero-section">
             <div class="container">
                 <div class="row align-items-center min-vh-100">
+                    <!-- Foto do Perfil -->
+                    <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000"
+                        data-aos-delay="200">
+                        <div class="profile-container">
+                            <div class="profile-pic">
+                                <img src="assets/imgs/user.png" alt="Foto de Perfil" class="profile-image">
+                            </div>
+                        </div>
+                    </div>
+                    
                     <!-- Conteúdo Principal -->
                     <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
                         <h1 class="display-4 fw-bold hero-title mb-3">
@@ -728,16 +741,6 @@
                             <a class="btn btn-outline-primary btn-lg" href="#contato">
                                 <i class="fas fa-envelope me-2"></i>Entre em Contato
                             </a>
-                        </div>
-                    </div>
-
-                    <!-- Foto do Perfil -->
-                    <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000"
-                        data-aos-delay="200">
-                        <div class="profile-container">
-                            <div class="profile-pic">
-                                <img src="assets/imgs/user1.png" alt="Foto de Perfil" class="profile-image">
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -765,15 +768,15 @@
                     <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                         <div class="about-text">
                             <p class="fs-5 mb-4">
-                                Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong>, apaixonado por
+                                Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong>, fascinado por
                                 criar
                                 soluções digitais que combinam estética e funcionalidade. Especializado em
                                 desenvolvimento
-                                front-end, sempre busco aprender novas tecnologias e tendências do mercado.
+                                <strong>Full-Stack</strong>, sempre busco aprender novas tecnologias e tendências do mercado.
                             </p>
                             <p class="fs-5">
                                 Minha abordagem é focada na <strong>experiência do usuário</strong>, criando interfaces
-                                intuitivas e responsivas que funcionam perfeitamente em qualquer dispositivo.
+                                intuitivas e responsivas que funcionam perfeitamente em qualquer dispositivo e para qualquer cliente.
                             </p>
                         </div>
                     </div>
@@ -832,7 +835,7 @@
                                             </div>
                                             <div>
                                                 <h5 class="card-title mb-1">Backend Development</h5>
-                                                <p class="card-text text-muted">PHP, Node.js, MySQL e APIs REST</p>
+                                                <p class="card-text text-muted">PHP, Node.js, MySQL, APIs REST,</p>
                                             </div>
                                         </div>
                                     </div>
@@ -861,33 +864,30 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="card project-card h-100">
                         <div class="project-image position-relative">
-                            <div class="bg-primary d-flex align-items-center justify-content-center h-100">
-                                <i class="fas fa-shopping-cart fa-3x text-white"></i>
-                            </div>
+                            <img src="assets/imgs/siteivf.png" class="card-img-top" alt="Projeto 1">
                             <div class="project-overlay">
                                 <div class="project-buttons">
-                                    <a href="#" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
+                                    <a href="https://ivfassessoria.com" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
                                         rel="noopener" title="Ver projeto">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
-                                    <a href="#" class="btn btn-light btn-sm rounded-circle" target="_blank"
+                                    <a href="https://github.com/diegofilho19/SIte-IVF" class="btn btn-light btn-sm rounded-circle" target="_blank"
                                         rel="noopener" title="Ver código no GitHub">
-                                        <i class="fab fa-github"></i>
+                                        <i class="fab fa-github fa-2x"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">E-commerce Moderno</h5>
+                            <h5 class="card-title">LandingPage - IVF ASSESSORIA</h5>
                             <p class="card-text">
-                                Plataforma de e-commerce responsiva com carrinho de compras, sistema de pagamento
-                                e painel administrativo completo.
+                                Landing page responsiva para empresa de assessoria na gestão pública, com design moderno e responsivo para diversos dispositivos.
                             </p>
                             <div class="d-flex flex-wrap gap-1">
                                 <span class="badge bg-primary">HTML</span>
                                 <span class="badge bg-primary">CSS</span>
                                 <span class="badge bg-primary">JavaScript</span>
-                                <span class="badge bg-primary">PHP</span>
+                                <span class="badge bg-primary">BootStrap - 5</span>
                             </div>
                         </div>
                     </div>
@@ -897,33 +897,32 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card project-card h-100">
                         <div class="project-image position-relative">
-                            <div class="bg-primary d-flex align-items-center justify-content-center h-100">
-                                <i class="fas fa-chart-line fa-3x text-white"></i>
-                            </div>
+                            <img src="assets/imgs/portifoliodg.png" class="card-img-top" alt="Projeto 2">
                             <div class="project-overlay">
                                 <div class="project-buttons">
-                                    <a href="#" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
+                                    <a href="https://dgmedeiros26.site" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
                                         rel="noopener" title="Ver projeto">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
-                                    <a href="#" class="btn btn-light btn-sm rounded-circle" target="_blank"
+                                    <a href="https://github.com/diegofilho19/Portifolio" class="btn btn-light btn-sm rounded-circle" target="_blank"
                                         rel="noopener" title="Ver código no GitHub">
-                                        <i class="fab fa-github"></i>
+                                        <i class="fab fa-github fa-2x"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Dashboard Analytics</h5>
+                            <h5 class="card-title">Meu Portfólio</h5>
                             <p class="card-text">
-                                Dashboard interativo para análise de dados com gráficos dinâmicos e relatórios
-                                em tempo real.
-                            </p>
+                                Website pessoal para exibir meu portfólio de projetos, habilidades e informações de
+                                contato.
+                            </p> <br>
                             <div class="d-flex flex-wrap gap-1">
-                                <span class="badge bg-primary">React</span>
-                                <span class="badge bg-primary">Chart.js</span>
-                                <span class="badge bg-primary">Node.js</span>
-                                <span class="badge bg-primary">MongoDB</span>
+                                <span class="badge bg-primary">Html</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-primary">JavaScript</span>
+                                <span class="badge bg-primary">BootStrap - 5</span>
+                                <span class="badge bg-primary">AOS Animation</span>
                             </div>
                         </div>
                     </div>
@@ -933,33 +932,30 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                     <div class="card project-card h-100">
                         <div class="project-image position-relative">
-                            <div class="bg-primary d-flex align-items-center justify-content-center h-100">
-                                <i class="fas fa-tasks fa-3x text-white"></i>
-                            </div>
+                            <img src="assets/imgs/sitemimosdefita.png" class="card-img-top" alt="Projeto 3">
                             <div class="project-overlay">
                                 <div class="project-buttons">
-                                    <a href="#" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
+                                    <!-- <a href="#" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
                                         rel="noopener" title="Ver projeto">
                                         <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="#" class="btn btn-light btn-sm rounded-circle" target="_blank"
+                                    </a> -->
+                                    <a href="https://github.com/diegofilho19/SiteMimosdeFita" class="btn btn-light btn-sm rounded-circle" target="_blank"
                                         rel="noopener" title="Ver código no GitHub">
-                                        <i class="fab fa-github"></i>
+                                        <i class="fab fa-github fa-2x"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">App de Tarefas</h5>
+                            <h5 class="card-title">E-Commerce - Mimos de Fita (em prod.)</h5>
                             <p class="card-text">
-                                Aplicação web para gerenciamento de tarefas com autenticação, categorização
-                                e notificações em tempo real.
+                                Plataforma de e-commerce completa para venda de produtos artesanais, com sistema de
+                                Cadadastro e gerenciamento de pedidos.
                             </p>
                             <div class="d-flex flex-wrap gap-1">
-                                <span class="badge bg-primary">Vue.js</span>
-                                <span class="badge bg-primary">Express</span>
-                                <span class="badge bg-primary">MySQL</span>
-                                <span class="badge bg-primary">JWT</span>
+                                <span class="badge bg-primary">Html</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-primary">JavaScript</span>
                             </div>
                         </div>
                     </div>
@@ -1008,7 +1004,7 @@
                                 <span>GitHub</span>
                             </a>
 
-                            <a href="https://www.instagram.com/dgmedeirosf_/"
+                            <a href="https://www.instagram.com/dg_incode/"
                                 class="contact-method d-flex align-items-center mb-3" target="_blank" rel="noopener">
                                 <i class="fab fa-instagram me-3"></i>
                                 <span>Instagram</span>
@@ -1046,7 +1042,7 @@
 
                                 <div class="mb-4">
                                     <label for="message" class="form-label">Mensagem</label>
-                                    <textarea class="form-control" id="message" name="message" rows="5"
+                                    <textarea class="form-control" id="message" name="message" rows="10"
                                         placeholder="Conte-me sobre seu projeto..." required></textarea>
                                 </div>
 
