@@ -1,0 +1,23 @@
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Node (desenvolvimento local apenas)
+node_modules/
+package-lock.json
+npm-debug.log
+yarn-error.log
+
+# Servidor Node (usar PHP em produção cPanel)
+server.js
+
+# IDEs e editores
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
