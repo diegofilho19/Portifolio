@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Diego Medeiros</title>
+    <title>Diego Medeiros — FullStack &amp; Mobile Developer</title>
+    <meta name="description" content="Diego Medeiros — Desenvolvedor FullStack e Mobile. Portfólio de projetos web, apps e sistemas.">
 
-    <!-- Bootstrap CSS Framework -->
+    <!-- Bootstrap CSS Framework (usado apenas para o grid responsivo) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS -->
     <link rel="icon" href="assets/imgs/icon_dg.png">
 
     <!-- AOS Animation Library -->
@@ -26,603 +27,488 @@
 </head>
 
 <body>
-    <!-- ===== NAVEGAÇÃO FIXA COM BOOTSTRAP ===== -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar" id="navbar">
+    <!-- ===== NAVEGAÇÃO EM FORMATO DE ABAS DE EDITOR ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="navbar">
         <div class="container">
-            <!-- Logo -->
             <a class="navbar-brand" href="#home">
-                <img src="assets/imgs/icon_dg.png" alt="Logo" class="navbar-logo">
+                <img src="assets/imgs/icon_dg.png" alt="Logo Diego Medeiros" class="navbar-logo">
+                <span class="brand-name">diego<span class="brand-dot">.</span>medeiros</span>
             </a>
 
-            <!-- Menu Mobile Toggle -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menu de Navegação -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto ide-tabs">
+                    <li class="nav-item"><a class="nav-link ide-tab" href="#home"><span class="tab-dot"></span>home.js</a></li>
+                    <li class="nav-item"><a class="nav-link ide-tab" href="#sobre"><span class="tab-dot"></span>sobre.js</a></li>
+                    <li class="nav-item"><a class="nav-link ide-tab" href="#ferramentas"><span class="tab-dot"></span>stack.json</a></li>
+                    <li class="nav-item"><a class="nav-link ide-tab" href="#projetos"><span class="tab-dot"></span>projetos/</a></li>
+                    <li class="nav-item"><a class="nav-link ide-tab" href="#contato"><span class="tab-dot"></span>contato.sh</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ferramentas">Ferramentas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="theme-toggle" id="themeToggle" title="Alternar modo claro/escuro">
-                            <i class="fas fa-moon"></i>
+                        <button class="theme-toggle" id="themeToggle" title="Alternar tema claro/escuro">
+                            <i class="fas fa-sun"></i>
                         </button>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="btn btn-outline-primary ms-2" href="./assets/downloads/Currículo Diego Medeiros.pdf"
-                            download>
-                            <i class="fas fa-download me-1"></i>Download CV
-                        </a>
-                    </li> -->
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- ===== SEÇÃO HOME/HERO ===== -->
-    <div>
-        <section id="home" class="hero-section">
-            <div class="container">
-                <div class="row align-items-center min-vh-100">
-                    <!-- Foto do Perfil -->
-                    <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000"
-                        data-aos-delay="200">
-                        <div class="profile-container">
-                            <div class="profile-pic">
-                                <img src="assets/imgs/user.png" alt="Foto de Perfil" class="profile-image">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Conteúdo Principal -->
-                    <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-                        <h1 class="display-4 fw-bold hero-title mb-3">
-                            Diego Medeiros
-                        </h1>
-                        <h2 class="h3 fw-medium hero-subtitle mb-4">
-                            Desenvolvedor Web FullStack & Mobile
-                        </h2>
-                        <p class="lead hero-description mb-4">
-                            Criando experiências digitais únicas e funcionais, com foco em design moderno
-                            e desenvolvimento responsivo. Especializado em transformar ideias em realidade digital.
-                        </p>
-
-                        <!-- Botões de Ação -->
-                        <div class="hero-buttons">
-                            <a class="btn btn-primary btn-lg me-3" href="#projetos">
-                                <i class="fas fa-code me-2"></i>Ver Projetos
-                            </a>
-                            <a class="btn btn-outline-primary btn-lg" href="#contato">
-                                <i class="fas fa-envelope me-2"></i>Entre em Contato
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-
-    <!-- Indicador de Scroll -->
-    <div class="scroll-indicator" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-        <div class="scroll-arrow"></div>
-    </div>
-    </section>
-
-    <!-- ===== SEÇÃO SOBRE ===== -->
-        <section id="sobre" class="about-section py-5">
-            <div class="container">
-                <!-- Título da Seção -->
-                <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="display-5 fw-bold section-title">Sobre Mim</h2>
-                    <div class="title-underline mx-auto"></div>
-                </div>
-
-                <div class="row align-items-center">
-                    <!-- Texto Sobre -->
-                    <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
-                        <div class="about-text">
-                            <p class="fs-5 mb-4">
-                                Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong>, fascinado por
-                                criar
-                                soluções digitais que combinam estética e funcionalidade. Especializado em
-                                desenvolvimento
-                                <strong>Full-Stack</strong>, sempre busco aprender novas tecnologias e tendências do mercado.
-                            </p>
-                            <p class="fs-5">
-                                Minha abordagem é focada na <strong>experiência do usuário</strong>, criando interfaces
-                                intuitivas e responsivas que funcionam perfeitamente em qualquer dispositivo e para qualquer cliente.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Habilidades -->
-                    <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
-                        <h3 class="h4 fw-semibold mb-4">Habilidades Principais</h3>
-
-                        <div class="row g-4">
-                            <!-- Card UI/UX Design -->
-                            <div class="col-12">
-                                <div class="card skill-card h-100">
-                                    <div class="card-body">
-                                        <div class="d-flex align-items-center">
-                                            <div
-                                                class="skill-icon me-3 bg-primary d-flex align-items-center justify-content-center">
-                                                <i class="fas fa-palette text-white"></i>
-                                            </div>
-                                            <div>
-                                                <h5 class="card-title mb-1">UI/UX Design</h5>
-                                                <p class="card-text text-muted">Design de interfaces modernas e
-                                                    intuitivas</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Card Frontend Development -->
-                            <div class="col-12">
-                                <div class="card skill-card h-100">
-                                    <div class="card-body">
-                                        <div class="d-flex align-items-center">
-                                            <div
-                                                class="skill-icon me-3 bg-primary d-flex align-items-center justify-content-center">
-                                                <i class="fas fa-code text-white"></i>
-                                            </div>
-                                            <div>
-                                                <h5 class="card-title mb-1">Frontend Development</h5>
-                                                <p class="card-text">HTML, CSS, JavaScript e frameworks modernos</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Card Backend Development -->
-                            <div class="col-12">
-                                <div class="card skill-card h-100">
-                                    <div class="card-body">
-                                        <div class="d-flex align-items-center">
-                                            <div
-                                                class="skill-icon me-3 bg-primary d-flex align-items-center justify-content-center">
-                                                <i class="fas fa-server text-white"></i>
-                                            </div>
-                                            <div>
-                                                <h5 class="card-title mb-1">Backend Development</h5>
-                                                <p class="card-text text-muted">PHP, Node.js, MySQL, APIs REST,</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <section id="ferramentas">
+    <!-- ===== SEÇÃO HOME/HERO — "EDITOR WINDOW" ===== -->
+    <section id="home" class="hero-section">
         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="800">
-                <h2 class="display-5 fw-bold section-title">Ferramentas Utilizadas</h2>
-                <div class="title-underline mx-auto"></div>
+            <div class="ide-window" data-aos="fade-up" data-aos-duration="700">
+                <!-- Barra de título da janela -->
+                <div class="ide-titlebar">
+                    <div class="ide-dots">
+                        <span class="ide-dot dot-red"></span>
+                        <span class="ide-dot dot-amber"></span>
+                        <span class="ide-dot dot-green"></span>
+                    </div>
+                    <div class="ide-filename">diego-medeiros — portfolio.tsx</div>
+                    <div class="ide-status-pill">
+                        <span class="status-blip"></span>
+                        disponível para novos projetos
+                    </div>
+                </div>
+
+                <!-- Corpo: código à esquerda, preview à direita -->
+                <div class="ide-body">
+                    <div class="ide-code-pane">
+                        <pre class="code-block" id="heroCode" aria-label="Apresentação de Diego Medeiros em formato de código">
+<span class="code-line" data-line="1"><span class="ln">1</span><span class="tok-com">// bem-vindo ao meu portfólio</span></span>
+<span class="code-line" data-line="2"><span class="ln">2</span><span class="tok-key">const</span> <span class="tok-var">developer</span> <span class="tok-punc">=</span> <span class="tok-punc">{</span></span>
+<span class="code-line" data-line="3"><span class="ln">3</span>  <span class="tok-prop">name</span><span class="tok-punc">:</span> <span class="tok-str">"Diego Medeiros"</span><span class="tok-punc">,</span></span>
+<span class="code-line" data-line="4"><span class="ln">4</span>  <span class="tok-prop">role</span><span class="tok-punc">:</span> <span class="tok-str">"FullStack &amp; Mobile Dev"</span><span class="tok-punc">,</span></span>
+<span class="code-line" data-line="5"><span class="ln">5</span>  <span class="tok-prop">stack</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"JS"</span><span class="tok-punc">,</span> <span class="tok-str">"PHP"</span><span class="tok-punc">,</span> <span class="tok-str">"React Native"</span><span class="tok-punc">]</span><span class="tok-punc">,</span></span>
+<span class="code-line" data-line="6"><span class="ln">6</span>  <span class="tok-prop">based_in</span><span class="tok-punc">:</span> <span class="tok-str">"Pernambuco, BR"</span><span class="tok-punc">,</span></span>
+<span class="code-line" data-line="7"><span class="ln">7</span>  <span class="tok-prop">focus</span><span class="tok-punc">:</span> <span class="tok-str">"produto de ponta a ponta"</span><span class="tok-punc">,</span></span>
+<span class="code-line" data-line="8"><span class="ln">8</span><span class="tok-punc">}</span><span class="tok-punc">;</span></span>
+<span class="code-line" data-line="9"><span class="ln">9</span></span>
+<span class="code-line" data-line="10"><span class="ln">10</span><span class="tok-var">developer</span><span class="tok-punc">.</span><span class="tok-fn">build</span><span class="tok-punc">(</span><span class="tok-var">suaIdeia</span><span class="tok-punc">)</span><span class="tok-punc"> => </span><span class="tok-str">produto real</span><span class="tok-punc">;</span><span class="code-cursor" id="heroCursor">&nbsp;</span></span></pre>
+
+                        <div class="hero-buttons">
+                            <a class="btn-ide btn-ide-primary" href="#projetos">
+                                <i class="fas fa-terminal me-2"></i>Ver Projetos
+                            </a>
+                            <a class="btn-ide btn-ide-outline" href="#contato">
+                                <i class="fas fa-envelope me-2"></i>Falar Comigo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="ide-preview-pane">
+                        <div class="preview-toolbar">
+                            <i class="fas fa-arrow-left preview-icon"></i>
+                            <i class="fas fa-arrow-right preview-icon"></i>
+                            <i class="fas fa-rotate-right preview-icon"></i>
+                            <span class="preview-url">preview.local/diego</span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="profile-pic">
+                                <img src="assets/imgs/user.png" alt="Foto de Diego Medeiros" class="profile-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="row g-4 justify-content-center">
-                <!-- Ferramenta 1: HTML5 -->
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="200">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-                        alt="HTML5" width="80" height="80">
-                    <h5 class="mt-3">HTML5</h5>
-                </div>
-                <!-- Ferramenta 2: CSS3 -->
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="400">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-                        alt="CSS3" width="80" height="80">
-                    <h5 class="mt-3">CSS3</h5>
-                </div>
-                <!-- Ferramenta 3: JavaScript -->
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="600">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                        alt="JavaScript" width="80" height="80">
-                    <h5 class="mt-3">JavaScript</h5>
-                </div>
-                <!-- Ferramenta 4: Bootstrap -->
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="800">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg"
-                        alt="Bootstrap" width="80" height="80">
-                    <h5 class="mt-3">Bootstrap</h5>
-                </div>
-                <!-- Ferramenta 5: PHP -->
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="1000">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
-                        alt="Laravel" width="80" height="80">
-                    <h5 class="mt-3">Laravel</h5>
-                </div>
-                <!-- Ferramenta 6: ReactNative -->
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="1200">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
-                        alt="ReactNative" width="80" height="80">
-                    <h5 class="mt-3">ReactNative</h5>
-                </div>
-
-                <!-- Ferramenta 7: Figma -->
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="1400">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg"
-                        alt="Figma" width="80" height="80">
-                    <h5 class="mt-3">Figma</h5>
-                </div>
-                
-                <!-- Ferramenta 8: MySQL -->
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="1600">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                        alt="PostgreSQL" width="80" height="80">
-                    <h5 class="mt-3">PostgreSQL</h5>
-                </div>
-
-                <!-- Ferramenta 9: Trello -->
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="1800">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/trello/trello-plain.svg"
-                        alt="Trello" width="80" height="80">
-                    <h5 class="mt-3">Trello</h5>
-                </div>
-                
-                <!-- Ferramenta 10: GitHub -->
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="2000">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
-                        alt="GitHub" width="80" height="80">
-                    <h5 class="mt-3">GitHub</h5>
-                </div>
-
-                <!-- Ferramenta 11: Insomnia -->
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="2200">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/insomnia/insomnia-plain.svg"
-                        alt="Insomnia" width="80" height="80">
-                    <h5 class="mt-3">Insomnia</h5>
-                </div>
-
-                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="2200">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                        alt="Node.js" width="80" height="80">
-                    <h5 class="mt-3">Node.js</h5>
-                </div>
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-duration="700" data-aos-delay="600">
+            <span class="scroll-label">scroll</span>
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
-    <!-- ===== SEÇÃO PROJETOS ===== -->
-    <section id="projetos" class="projects-section py-5">
-        <canvas id="lightning-canvas"></canvas>
+    <!-- ===== SEÇÃO SOBRE ===== -->
+    <section id="sobre" class="about-section py-5">
         <div class="container">
-            <!-- Título da Seção -->
-            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="800">
-                <h2 class="display-5 fw-bold section-title">Projetos</h2>
-                <div class="title-underline mx-auto"></div>
-                <p class="lead mt-4">Alguns dos meus trabalhos mais recentes</p>
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="700">
+                <span class="section-eyebrow">// sobre.js</span>
+                <h2 class="section-title">Sobre mim</h2>
             </div>
 
-            <!-- Grid de Projetos -->
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
+                    <div class="about-text">
+                        <p class="fs-5 mb-4">
+                            Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong>, fascinado por
+                            criar soluções digitais que combinam estética e funcionalidade. Especializado em
+                            desenvolvimento <strong>Full-Stack</strong>, sempre busco aprender novas tecnologias e
+                            tendências do mercado.
+                        </p>
+                        <p class="fs-5">
+                            Minha abordagem é focada na <strong>experiência do usuário</strong>, criando interfaces
+                            intuitivas e responsivas que funcionam perfeitamente em qualquer dispositivo e para
+                            qualquer cliente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+                    <div class="skills-list">
+                        <div class="skill-row">
+                            <span class="skill-index">[0]</span>
+                            <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                            <div class="skill-copy">
+                                <h5>UI/UX Design</h5>
+                                <p>Design de interfaces modernas e intuitivas</p>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-index">[1]</span>
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <div class="skill-copy">
+                                <h5>Frontend Development</h5>
+                                <p>HTML, CSS, JavaScript e frameworks modernos</p>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-index">[2]</span>
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <div class="skill-copy">
+                                <h5>Backend Development</h5>
+                                <p>PHP, Node.js, PostgreSQL, APIs REST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO FERRAMENTAS — "stack.json" ===== -->
+    <section id="ferramentas" class="tools-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="700">
+                <span class="section-eyebrow">// stack.json</span>
+                <h2 class="section-title">Ferramentas &amp; Tecnologias</h2>
+            </div>
+
+            <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+                    <div class="tool-chip">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" width="44" height="44">
+                        <h5>HTML5</h5><span class="tool-version">^5.0</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
+                    <div class="tool-chip">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" width="44" height="44">
+                        <h5>CSS3</h5><span class="tool-version">^3.0</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="tool-chip">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="44" height="44">
+                        <h5>JavaScript</h5><span class="tool-version">ES2023</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+                    <div class="tool-chip">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap" width="44" height="44">
+                        <h5>Bootstrap</h5><span class="tool-version">^5.3</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <div class="tool-chip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" width="44" height="44">
+                        <h5>Laravel</h5><span class="tool-version">^10.0</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
+                    <div class="tool-chip">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React Native" width="44" height="44">
+                        <h5>React Native</h5><span class="tool-version">^0.74</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    <div class="tool-chip">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="Figma" width="44" height="44">
+                        <h5>Figma</h5><span class="tool-version">design</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
+                    <div class="tool-chip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="44" height="44">
+                        <h5>PostgreSQL</h5><span class="tool-version">^16</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                    <div class="tool-chip">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/trello/trello-plain.svg" alt="Trello" width="44" height="44">
+                        <h5>Trello</h5><span class="tool-version">gestão</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
+                    <div class="tool-chip">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub" width="44" height="44">
+                        <h5>GitHub</h5><span class="tool-version">versionamento</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                    <div class="tool-chip">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/insomnia/insomnia-plain.svg" alt="Insomnia" width="44" height="44">
+                        <h5>Insomnia</h5><span class="tool-version">API client</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="550">
+                    <div class="tool-chip">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" width="44" height="44">
+                        <h5>Node.js</h5><span class="tool-version">^20 LTS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO PROJETOS — "projetos/" ===== -->
+    <section id="projetos" class="projects-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="700">
+                <span class="section-eyebrow">// projetos/</span>
+                <h2 class="section-title">Projetos</h2>
+                <p class="section-lead">Alguns dos meus trabalhos mais recentes</p>
+            </div>
+
             <div class="row g-4">
                 <!-- Projeto 1 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="card project-card h-100">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-card-bar">
+                            <span class="ide-dot dot-red sm"></span><span class="ide-dot dot-amber sm"></span><span class="ide-dot dot-green sm"></span>
+                            <span class="project-file-name">ivf-assessoria.html</span>
+                        </div>
                         <div class="project-image position-relative">
-                            <img src="assets/imgs/siteivf.png" class="card-img-top" alt="Projeto 1">
+                            <img src="assets/imgs/siteivf.png" class="project-img" alt="Site da IVF Assessoria">
                             <div class="project-overlay">
                                 <div class="project-buttons">
-                                    <a href="https://ivfassessoria.com" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
-                                        rel="noopener" title="Ver projeto">
+                                    <a href="https://ivfassessoria.com" class="btn-icon" target="_blank" rel="noopener" title="Ver projeto">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
-                                    <a href="https://github.com/diegofilho19/SIte-IVF" class="btn btn-light btn-sm rounded-circle" target="_blank"
-                                        rel="noopener" title="Ver código no GitHub">
-                                        <i class="fab fa-github fa-2x"></i>
+                                    <a href="https://github.com/diegofilho19/SIte-IVF" class="btn-icon" target="_blank" rel="noopener" title="Ver código no GitHub">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">LandingPage - IVF ASSESSORIA</h5>
-                            <p class="card-text">
-                                Landing page responsiva para empresa de assessoria na gestão pública, com design moderno e responsivo para diversos dispositivos.
-                            </p>
-                            <div class="d-flex flex-wrap gap-1">
-                                <span class="badge bg-primary">HTML</span>
-                                <span class="badge bg-primary">CSS</span>
-                                <span class="badge bg-primary">JavaScript</span>
-                                <span class="badge bg-primary">BootStrap - 5</span>
+                        <div class="project-body">
+                            <h5>LandingPage — IVF Assessoria</h5>
+                            <p>Landing page responsiva para empresa de assessoria na gestão pública, com design moderno para diversos dispositivos.</p>
+                            <div class="tag-row">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Bootstrap 5</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projeto 2 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                    <div class="card project-card h-100">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+                    <div class="project-card">
+                        <div class="project-card-bar">
+                            <span class="ide-dot dot-red sm"></span><span class="ide-dot dot-amber sm"></span><span class="ide-dot dot-green sm"></span>
+                            <span class="project-file-name">portfolio.tsx</span>
+                        </div>
                         <div class="project-image position-relative">
-                            <img src="assets/imgs/portifoliodg.png" class="card-img-top" alt="Projeto 2">
+                            <img src="assets/imgs/portifoliodg.png" class="project-img" alt="Portfólio de Diego Medeiros">
                             <div class="project-overlay">
                                 <div class="project-buttons">
-                                    <a href="https://dgmedeiros26.site" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
-                                        rel="noopener" title="Ver projeto">
+                                    <a href="https://dgmedeiros26.site" class="btn-icon" target="_blank" rel="noopener" title="Ver projeto">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
-                                    <a href="https://github.com/diegofilho19/Portifolio" class="btn btn-light btn-sm rounded-circle" target="_blank"
-                                        rel="noopener" title="Ver código no GitHub">
-                                        <i class="fab fa-github fa-2x"></i>
+                                    <a href="https://github.com/diegofilho19/Portifolio" class="btn-icon" target="_blank" rel="noopener" title="Ver código no GitHub">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Meu Portfólio</h5>
-                            <p class="card-text">
-                                Website pessoal para exibir meu portfólio de projetos, habilidades e informações de
-                                contato.
-                            </p> <br>
-                            <div class="d-flex flex-wrap gap-1">
-                                <span class="badge bg-primary">Html</span>
-                                <span class="badge bg-primary">CSS</span>
-                                <span class="badge bg-primary">JavaScript</span>
-                                <span class="badge bg-primary">BootStrap - 5</span>
-                                <span class="badge bg-primary">AOS Animation</span>
+                        <div class="project-body">
+                            <h5>Meu Portfólio</h5>
+                            <p>Website pessoal para exibir meu portfólio de projetos, habilidades e informações de contato.</p>
+                            <div class="tag-row">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Bootstrap 5</span><span class="tag">AOS</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projeto 3 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                    <div class="card project-card h-100">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-card-bar">
+                            <span class="ide-dot dot-red sm"></span><span class="ide-dot dot-amber sm"></span><span class="ide-dot dot-green sm"></span>
+                            <span class="project-file-name">mimos-de-fita.js</span>
+                        </div>
                         <div class="project-image position-relative">
-                            <img src="assets/imgs/sitemimosdefita.png" class="card-img-top" alt="Projeto 3">
+                            <img src="assets/imgs/sitemimosdefita.png" class="project-img" alt="E-commerce Mimos de Fita">
                             <div class="project-overlay">
                                 <div class="project-buttons">
-                                    <!-- <a href="#" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
-                                        rel="noopener" title="Ver projeto">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a> -->
-                                    <a href="https://github.com/diegofilho19/SiteMimosdeFita" class="btn btn-light btn-sm rounded-circle" target="_blank"
-                                        rel="noopener" title="Ver código no GitHub">
-                                        <i class="fab fa-github fa-2x"></i>
+                                    <a href="https://github.com/diegofilho19/SiteMimosdeFita" class="btn-icon" target="_blank" rel="noopener" title="Ver código no GitHub">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">E-Commerce - Mimos de Fita (em prod.)</h5>
-                            <p class="card-text">
-                                Plataforma de e-commerce completa para venda de produtos artesanais, com sistema de
-                                Cadadastro e gerenciamento de pedidos.
-                            </p>
-                            <div class="d-flex flex-wrap gap-1">
-                                <span class="badge bg-primary">Html</span>
-                                <span class="badge bg-primary">CSS</span>
-                                <span class="badge bg-primary">JavaScript</span>
+                        <div class="project-body">
+                            <h5>E-Commerce — Mimos de Fita <span class="wip-tag">em prod.</span></h5>
+                            <p>Plataforma de e-commerce completa para venda de produtos artesanais, com sistema de cadastro e gerenciamento de pedidos.</p>
+                            <div class="tag-row">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projeto 4 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                    <div class="card project-card h-100">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
+                    <div class="project-card">
+                        <div class="project-card-bar">
+                            <span class="ide-dot dot-red sm"></span><span class="ide-dot dot-amber sm"></span><span class="ide-dot dot-green sm"></span>
+                            <span class="project-file-name">serventia-bdm.html</span>
+                        </div>
                         <div class="project-image position-relative">
-                            <img src="assets/imgs/serventia.png" class="card-img-top" alt="Projeto 4">
+                            <img src="assets/imgs/serventia.png" class="project-img" alt="Serventia de Belém de Maria">
                             <div class="project-overlay">
                                 <div class="project-buttons">
-                                    <a href="https://serventiabdm.com.br" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
-                                        rel="noopener" title="Ver projeto">
+                                    <a href="https://serventiabdm.com.br" class="btn-icon" target="_blank" rel="noopener" title="Ver projeto">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
-                                    <!-- <a href="https://github.com/diegofilho19/SiteMimosdeFita" class="btn btn-light btn-sm rounded-circle" target="_blank"
-                                        rel="noopener" title="Ver código no GitHub">
-                                        <i class="fab fa-github fa-2x"></i>
-                                    </a> -->
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Serventia de Belém de Maria/PE</h5>
-                            <p class="card-text">
-                                Landing page informativa para serventia local, destacando serviços oferecidos e informações de contato.
-                            </p>
-                            <div class="d-flex flex-wrap gap-1">
-                                <span class="badge bg-primary">Html</span>
-                                <span class="badge bg-primary">CSS</span>
-                                <span class="badge bg-primary">JavaScript</span>
+                        <div class="project-body">
+                            <h5>Serventia de Belém de Maria/PE</h5>
+                            <p>Landing page informativa para serventia local, destacando serviços oferecidos e informações de contato.</p>
+                            <div class="tag-row">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projeto UniGO -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                    <div class="card project-card h-100">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-card-bar">
+                            <span class="ide-dot dot-red sm"></span><span class="ide-dot dot-amber sm"></span><span class="ide-dot dot-green sm"></span>
+                            <span class="project-file-name">educarteira.tsx</span>
+                        </div>
                         <div class="project-image position-relative">
-                            <img src="assets/imgs/UniGo.png" class="card-img-top" alt="Projeto 3">
+                            <img src="assets/imgs/UniGo.png" class="project-img" alt="App EduCarteira">
                             <div class="project-overlay">
                                 <div class="project-buttons">
-                                    <!-- <a href="#" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
-                                        rel="noopener" title="Ver projeto">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a> -->
-                                    <a href="https://github.com/diegofilho19/SiteMimosdeFita" class="btn btn-light btn-sm rounded-circle" target="_blank"
-                                        rel="noopener" title="Ver código no GitHub">
-                                        <i class="fab fa-github fa-2x"></i>
+                                    <a href="https://github.com/diegofilho19/SiteMimosdeFita" class="btn-icon" target="_blank" rel="noopener" title="Ver código no GitHub">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">EduCarteira - Transporte Universitario</h5>
-                            <p class="card-text">
-                                Um aplicativo móvel junto com um Dashboard para facilitar o transporte universitário, conectando estudantes a motoristas de forma segura e eficiente.
-                            </p>
-                            <div class="d-flex flex-wrap gap-1">
-                                <span class="badge bg-primary">PHP</span>
-                                <span class="badge bg-primary">API'S</span>
-                                <span class="badge bg-primary">AJAX</span>
-                                <span class="badge bg-primary">BootStrap - 5</span>
-                                <span class="badge bg-primary">ReactNative</span>
+                        <div class="project-body">
+                            <h5>EduCarteira — Transporte Universitário</h5>
+                            <p>Aplicativo móvel com Dashboard para facilitar o transporte universitário, conectando estudantes a motoristas de forma segura.</p>
+                            <div class="tag-row">
+                                <span class="tag">PHP</span><span class="tag">APIs</span><span class="tag">AJAX</span><span class="tag">Bootstrap 5</span><span class="tag">React Native</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projeto CadImob -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                    <div class="card project-card h-100">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="350">
+                    <div class="project-card">
+                        <div class="project-card-bar">
+                            <span class="ide-dot dot-red sm"></span><span class="ide-dot dot-amber sm"></span><span class="ide-dot dot-green sm"></span>
+                            <span class="project-file-name">cad-imob.tsx</span>
+                        </div>
                         <div class="project-image position-relative">
-                            <img src="assets/imgs/CadImob.png" class="card-img-top" alt="Projeto 3">
+                            <img src="assets/imgs/CadImob.png" class="project-img" alt="App Cadastro Imobiliário">
                             <div class="project-overlay">
                                 <div class="project-buttons">
-                                    <!-- <a href="#" class="btn btn-primary btn-sm rounded-circle me-2" target="_blank"
-                                        rel="noopener" title="Ver projeto">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a> -->
-                                    <a href="https://github.com/diegofilho19/SiteMimosdeFita" class="btn btn-light btn-sm rounded-circle" target="_blank"
-                                        rel="noopener" title="Ver código no GitHub">
-                                        <i class="fab fa-github fa-2x"></i>
+                                    <a href="https://github.com/diegofilho19/SiteMimosdeFita" class="btn-icon" target="_blank" rel="noopener" title="Ver código no GitHub">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Cadastro Imobiliário</h5>
-                            <p class="card-text">
-                                Um aplicativo offline-first de cadastro imobiliário para gerenciar propriedades e contribuintes com interface amigável e funcionalidades robustas.
-                            </p>
-                            <div class="d-flex flex-wrap gap-1">
-                                <span class="badge bg-primary">ReactNative</span>
-                                <span class="badge bg-primary">SQLite</span>
-                                <span class="badge bg-primary">API'S</span>
+                        <div class="project-body">
+                            <h5>Cadastro Imobiliário</h5>
+                            <p>Aplicativo offline-first de cadastro imobiliário para gerenciar propriedades e contribuintes, com interface amigável.</p>
+                            <div class="tag-row">
+                                <span class="tag">React Native</span><span class="tag">SQLite</span><span class="tag">APIs</span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== SEÇÃO CONTATO ===== -->
+    <!-- ===== SEÇÃO CONTATO — "contato.sh" ===== -->
     <section id="contato" class="contact-section py-5">
         <div class="container">
-            <!-- Título da Seção -->
-            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="800">
-                <h2 class="display-5 fw-bold section-title">Entre em Contato</h2>
-                <div class="title-underline mx-auto"></div>
-                <p class="lead mt-4">Vamos conversar sobre seu próximo projeto!</p>
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="700">
+                <span class="section-eyebrow">// contato.sh</span>
+                <h2 class="section-title">Vamos conversar?</h2>
+                <p class="section-lead">Sobre seu próximo projeto, sempre tem espaço na agenda.</p>
             </div>
 
-            <div class="row align-items-center">
-                <!-- Informações de Contato -->
-                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
-                    <div class="contact-info">
-                        <h3 class="h3 fw-semibold mb-4">Vamos conversar!</h3>
-                        <p class="fs-5 mb-4">
-                            Estou sempre aberto a novas oportunidades e projetos interessantes.
-                            Entre em contato comigo através dos canais abaixo:
-                        </p>
-
-                        <!-- Links de Contato -->
-                        <div class="contact-methods">
-                            <a href="mailto:diegoalves11demedeiros@gmail.com"
-                                class="contact-method d-flex align-items-center mb-3">
-                                <i class="fas fa-envelope me-3"></i>
-                                <span>diegoalves11demedeiros@gmail.com</span>
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
+                    <div class="terminal-card">
+                        <div class="ide-titlebar sm">
+                            <div class="ide-dots">
+                                <span class="ide-dot dot-red sm"></span>
+                                <span class="ide-dot dot-amber sm"></span>
+                                <span class="ide-dot dot-green sm"></span>
+                            </div>
+                            <div class="ide-filename">zsh — contato</div>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="terminal-line"><span class="prompt">$</span> git remote -v</p>
+                            <a href="mailto:diegoalves11demedeiros@gmail.com" class="contact-method">
+                                <i class="fas fa-envelope"></i><span>diegoalves11demedeiros@gmail.com</span>
                             </a>
-
-                            <a href="www.linkedin.com/in/dgfilho26"
-                                class="contact-method d-flex align-items-center mb-3" target="_blank" rel="noopener">
-                                <i class="fab fa-linkedin me-3"></i>
-                                <span>LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/dgfilho26" class="contact-method" target="_blank" rel="noopener">
+                                <i class="fab fa-linkedin"></i><span>linkedin.com/in/dgfilho26</span>
                             </a>
-
-                            <a href="https://github.com/diegofilho19"
-                                class="contact-method d-flex align-items-center mb-3" target="_blank" rel="noopener">
-                                <i class="fab fa-github me-3"></i>
-                                <span>GitHub</span>
+                            <a href="https://github.com/diegofilho19" class="contact-method" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i><span>github.com/diegofilho19</span>
                             </a>
-
-                            <a href="https://www.instagram.com/dg_incode/"
-                                class="contact-method d-flex align-items-center mb-3" target="_blank" rel="noopener">
-                                <i class="fab fa-instagram me-3"></i>
-                                <span>Instagram</span>
+                            <a href="https://www.instagram.com/dg_incode/" class="contact-method" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i><span>@dg_incode</span>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Formulário de Contato -->
-                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
-                    <div class="card contact-form-card">
-                        <div class="card-body p-4">
-                            <div id="contact-alert" class="alert" role="alert" style="display:none;"></div>
-                            <form id="contact-form">
-                                <input type="hidden" name="access_key" id="web3forms-key" value="2fb054d3-58fd-43a5-8564-f036be9fc158">
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Nome</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text">
-                                            <i class="fas fa-user"></i>
-                                        </span>
-                                        <input type="text" class="form-control" id="name" name="name"
-                                            placeholder="Seu nome completo" required>
-                                    </div>
-                                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+                    <div class="contact-form-card">
+                        <div id="contact-alert" class="alert" role="alert" style="display:none;"></div>
+                        <form id="contact-form">
+                            <input type="hidden" name="access_key" id="web3forms-key" value="2fb054d3-58fd-43a5-8564-f036be9fc158">
 
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">E-mail</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text">
-                                            <i class="fas fa-envelope"></i>
-                                        </span>
-                                        <input type="email" class="form-control" id="email" name="email"
-                                            placeholder="seu@email.com" required>
-                                    </div>
-                                </div>
+                            <div class="form-field mb-3">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome completo" required>
+                            </div>
 
-                                <div class="mb-4">
-                                    <label for="message" class="form-label">Mensagem</label>
-                                    <textarea class="form-control" id="message" name="message" rows="10"
-                                        placeholder="Conte-me sobre seu projeto..." required></textarea>
-                                </div>
+                            <div class="form-field mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
 
-                                <div class="d-grid">
-                                    <button class="btn btn-primary btn-lg" type="submit">
-                                        <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+                            <div class="form-field mb-4">
+                                <label for="message" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="message" name="message" rows="8" placeholder="Conte-me sobre seu projeto..." required></textarea>
+                            </div>
+
+                            <button class="btn-ide btn-ide-primary btn-block" type="submit">
+                                <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -631,36 +517,20 @@
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer py-4">
-        <div class="container">
-            <div class="text-center">
-                <p class="mb-2">
-                    <strong>&copy; 2025 Diego Medeiros</strong> - Todos os direitos reservados.
-                </p>
-            </div>
+        <div class="container text-center">
+            <p class="footer-line"><span class="prompt">$</span> echo "© 2025 Diego Medeiros — todos os direitos reservados"</p>
         </div>
     </footer>
 
     <!-- Botão Voltar ao Topo -->
-    <button class="back-to-top" id="backToTop">
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- ===== SCRIPTS ===== -->
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom JS -->
     <script src="./assets/script/script.js"></script>
-
-    <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-</body>
-
-</html>@2.3.1/dist/aos.js"></script>
-
-
 </body>
 
 </html>
